@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Nov 10 23:37:05 2017
+# Process ID: 14529
+# Current directory: /home/ansh/final_miniproject/final_miniproject.runs/synth_1
+# Command line: vivado -log Seven_upSeven_down.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Seven_upSeven_down.tcl
+# Log file: /home/ansh/final_miniproject/final_miniproject.runs/synth_1/Seven_upSeven_down.vds
+# Journal file: /home/ansh/final_miniproject/final_miniproject.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Seven_upSeven_down.tcl -notrace

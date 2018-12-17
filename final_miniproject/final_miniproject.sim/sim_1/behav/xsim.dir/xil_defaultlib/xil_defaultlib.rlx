@@ -1,0 +1,15 @@
+0.6
+2016.4
+Jan 23 2017
+19:19:20
+/home/ansh/Desktop/project_files/7_segement_display.vhd,1510224393,vhdl,,,,clock5;counter;d2_4;display_digit;ftp;select_digit;selector;seven_seg_display,,,,,,,,
+/home/ansh/Desktop/project_files/Bet_On.vhd,1509982559,vhdl,,,,bet_on,,,,,,,,
+/home/ansh/Desktop/project_files/Bset_RNG.vhd,1510270201,vhdl,,,,dff;random_number_generator,,,,,,,,
+/home/ansh/Desktop/project_files/Decider.vhd,1510317300,vhdl,,,,decider,,,,,,,,
+/home/ansh/Desktop/project_files/FSM_Delay.vhd,1510330722,vhdl,,,,fsm_delay,,,,,,,,
+/home/ansh/Desktop/project_files/GameOver.vhd,1510254850,vhdl,,,,gameover,,,,,,,,
+/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd,1510331790,vhdl,,,,seven_upseven_down,,,,,,,,
+/home/ansh/Desktop/project_files/bet_regis.vhd,1510225520,vhdl,,,,bet_regis;d_ff;register12,,,,,,,,
+/home/ansh/Desktop/project_files/comparator.vhd,1509983890,vhdl,,,,comparator,,,,,,,,
+/home/ansh/Desktop/project_files/feed_amount.vhd,1510141921,vhdl,,,,feed_amount,,,,,,,,
+/home/ansh/Desktop/project_files/subtractor.vhd,1510328586,vhdl,,,,subtractor,,,,,,,,

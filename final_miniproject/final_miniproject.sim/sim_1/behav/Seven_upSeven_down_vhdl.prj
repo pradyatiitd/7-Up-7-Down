@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../../Desktop/project_files/bet_regis.vhd"
+vhdl xil_defaultlib  "../../../../Desktop/project_files/Bset_RNG.vhd"
+vhdl xil_defaultlib  "../../../../Desktop/project_files/FSM_Delay.vhd"
+vhdl xil_defaultlib  "../../../../Desktop/project_files/Bet_On.vhd"
+vhdl xil_defaultlib  "../../../../Desktop/project_files/Decider.vhd"
+vhdl xil_defaultlib  "../../../../Desktop/project_files/comparator.vhd"
+vhdl xil_defaultlib  "../../../../Desktop/project_files/subtractor.vhd"
+vhdl xil_defaultlib  "../../../../Desktop/project_files/GameOver.vhd"
+vhdl xil_defaultlib  "../../../../Desktop/project_files/7_segement_display.vhd"
+vhdl xil_defaultlib  "../../../../Desktop/project_files/feed_amount.vhd"
+vhdl xil_defaultlib  "../../../../Desktop/project_files/Seven_upSeven_down.vhd"
+
+# Do not sort compile order
+nosort

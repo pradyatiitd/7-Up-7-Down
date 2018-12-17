@@ -1,0 +1,34 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ansh/Desktop/project_files/bet_regis.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity D_FF
+INFO: [VRFC 10-307] analyzing entity register12
+INFO: [VRFC 10-307] analyzing entity bet_regis
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ansh/Desktop/project_files/Bset_RNG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DFF
+INFO: [VRFC 10-307] analyzing entity Random_number_generator
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ansh/Desktop/project_files/FSM_Delay.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FSM_Delay
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ansh/Desktop/project_files/Bet_On.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Bet_On
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ansh/Desktop/project_files/Decider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Decider
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ansh/Desktop/project_files/comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity comparator
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ansh/Desktop/project_files/subtractor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity subtractor
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ansh/Desktop/project_files/GameOver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity GameOver
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ansh/Desktop/project_files/7_segement_display.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity selector
+INFO: [VRFC 10-307] analyzing entity d2_4
+INFO: [VRFC 10-307] analyzing entity ftp
+INFO: [VRFC 10-307] analyzing entity counter
+INFO: [VRFC 10-307] analyzing entity clock5
+INFO: [VRFC 10-307] analyzing entity display_digit
+INFO: [VRFC 10-307] analyzing entity select_digit
+INFO: [VRFC 10-307] analyzing entity seven_seg_display
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ansh/Desktop/project_files/feed_amount.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity D_FF
+INFO: [VRFC 10-307] analyzing entity register12
+INFO: [VRFC 10-307] analyzing entity feed_amount
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Seven_upSeven_down

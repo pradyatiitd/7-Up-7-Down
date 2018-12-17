@@ -1,0 +1,37 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /home/ansh/2ndYearSem1/COL215_Digital_Logic_and_System_design/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto f975b2fd62c84410b3c2864b266bfd18 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot Seven_upSeven_down_behav xil_defaultlib.Seven_upSeven_down -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling architecture behavioral of entity xil_defaultlib.Bet_On [bet_on_default]
+Compiling architecture behavioral of entity xil_defaultlib.DFF [dff_default]
+Compiling architecture behavioral of entity xil_defaultlib.Random_number_generator [random_number_generator_default]
+Compiling architecture behavioral of entity xil_defaultlib.comparator [comparator_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decider [decider_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture reg of entity xil_defaultlib.register12 [register12_default]
+Compiling architecture behavioral of entity xil_defaultlib.feed_amount [feed_amount_default]
+Compiling architecture behavioral of entity xil_defaultlib.subtractor [subtractor_default]
+Compiling architecture behavioral of entity xil_defaultlib.GameOver [gameover_default]
+Compiling architecture behavioral of entity xil_defaultlib.FSM_Delay [fsm_delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.bet_regis [bet_regis_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock5 [clock5_default]
+Compiling architecture behavioral of entity xil_defaultlib.ftp [ftp_default]
+Compiling architecture behavioral of entity xil_defaultlib.d2_4 [d2_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.select_digit [select_digit_default]
+Compiling architecture behavioral of entity xil_defaultlib.display_digit [display_digit_default]
+Compiling architecture behavioral of entity xil_defaultlib.seven_seg_display [seven_seg_display_default]
+Compiling architecture behavioral of entity xil_defaultlib.seven_upseven_down
+Built simulation snapshot Seven_upSeven_down_behav

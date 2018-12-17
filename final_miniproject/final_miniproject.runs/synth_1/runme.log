@@ -1,0 +1,511 @@
+
+*** Running vivado
+    with args -log Seven_upSeven_down.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Seven_upSeven_down.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Seven_upSeven_down.tcl -notrace
+Command: synth_design -top Seven_upSeven_down -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14538 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1058.574 ; gain = 128.098 ; free physical = 537 ; free virtual = 4579
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Seven_upSeven_down' [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:59]
+INFO: [Synth 8-3491] module 'Bet_On' declared at '/home/ansh/Desktop/project_files/Bet_On.vhd:34' bound to instance 'et_on' of component 'Bet_On' [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:214]
+INFO: [Synth 8-638] synthesizing module 'Bet_On' [/home/ansh/Desktop/project_files/Bet_On.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Bet_On' (1#1) [/home/ansh/Desktop/project_files/Bet_On.vhd:43]
+INFO: [Synth 8-3491] module 'Random_number_generator' declared at '/home/ansh/Desktop/project_files/Bset_RNG.vhd:59' bound to instance 'bset_RNG' of component 'Random_number_generator' [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'Random_number_generator' [/home/ansh/Desktop/project_files/Bset_RNG.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'DFF' [/home/ansh/Desktop/project_files/Bset_RNG.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (2#1) [/home/ansh/Desktop/project_files/Bset_RNG.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Random_number_generator' (3#1) [/home/ansh/Desktop/project_files/Bset_RNG.vhd:67]
+INFO: [Synth 8-3491] module 'comparator' declared at '/home/ansh/Desktop/project_files/comparator.vhd:34' bound to instance 'comp' of component 'comparator' [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:233]
+INFO: [Synth 8-638] synthesizing module 'comparator' [/home/ansh/Desktop/project_files/comparator.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'comparator' (4#1) [/home/ansh/Desktop/project_files/comparator.vhd:42]
+INFO: [Synth 8-3491] module 'Decider' declared at '/home/ansh/Desktop/project_files/Decider.vhd:34' bound to instance 'decide' of component 'Decider' [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'Decider' [/home/ansh/Desktop/project_files/Decider.vhd:46]
+WARNING: [Synth 8-614] signal 'rng' is read in the process but is not in the sensitivity list [/home/ansh/Desktop/project_files/Decider.vhd:48]
+WARNING: [Synth 8-614] signal 'invalid' is read in the process but is not in the sensitivity list [/home/ansh/Desktop/project_files/Decider.vhd:48]
+WARNING: [Synth 8-614] signal 'greaterthan7' is read in the process but is not in the sensitivity list [/home/ansh/Desktop/project_files/Decider.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'Decider' (5#1) [/home/ansh/Desktop/project_files/Decider.vhd:46]
+WARNING: [Synth 8-614] signal 'pushbutton1' is read in the process but is not in the sensitivity list [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:237]
+WARNING: [Synth 8-614] signal 'pushbutton2' is read in the process but is not in the sensitivity list [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:237]
+WARNING: [Synth 8-614] signal 'pushbutton3' is read in the process but is not in the sensitivity list [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:237]
+WARNING: [Synth 8-614] signal 'subtP1' is read in the process but is not in the sensitivity list [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:237]
+WARNING: [Synth 8-614] signal 'subtP2' is read in the process but is not in the sensitivity list [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:237]
+INFO: [Synth 8-3491] module 'feed_amount' declared at '/home/ansh/Desktop/project_files/feed_amount.vhd:95' bound to instance 'registr' of component 'feed_amount' [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:254]
+INFO: [Synth 8-638] synthesizing module 'feed_amount' [/home/ansh/Desktop/project_files/feed_amount.vhd:107]
+INFO: [Synth 8-3491] module 'register12' declared at '/home/ansh/Desktop/project_files/bet_regis.vhd:44' bound to instance 'p1' of component 'register12' [/home/ansh/Desktop/project_files/feed_amount.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'register12' [/home/ansh/Desktop/project_files/bet_regis.vhd:51]
+INFO: [Synth 8-3491] module 'D_FF' declared at '/home/ansh/Desktop/project_files/bet_regis.vhd:24' bound to instance 'D_FF0' of component 'D_FF' [/home/ansh/Desktop/project_files/bet_regis.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'D_FF' [/home/ansh/Desktop/project_files/bet_regis.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'D_FF' (6#1) [/home/ansh/Desktop/project_files/bet_regis.vhd:29]
+INFO: [Synth 8-3491] module 'D_FF' declared at '/home/ansh/Desktop/project_files/bet_regis.vhd:24' bound to instance 'D_FF1' of component 'D_FF' [/home/ansh/Desktop/project_files/bet_regis.vhd:59]
+INFO: [Synth 8-3491] module 'D_FF' declared at '/home/ansh/Desktop/project_files/bet_regis.vhd:24' bound to instance 'D_FF2' of component 'D_FF' [/home/ansh/Desktop/project_files/bet_regis.vhd:61]
+INFO: [Synth 8-3491] module 'D_FF' declared at '/home/ansh/Desktop/project_files/bet_regis.vhd:24' bound to instance 'D_FF3' of component 'D_FF' [/home/ansh/Desktop/project_files/bet_regis.vhd:63]
+INFO: [Synth 8-3491] module 'D_FF' declared at '/home/ansh/Desktop/project_files/bet_regis.vhd:24' bound to instance 'D_FF4' of component 'D_FF' [/home/ansh/Desktop/project_files/bet_regis.vhd:65]
+INFO: [Synth 8-3491] module 'D_FF' declared at '/home/ansh/Desktop/project_files/bet_regis.vhd:24' bound to instance 'D_FF5' of component 'D_FF' [/home/ansh/Desktop/project_files/bet_regis.vhd:67]
+INFO: [Synth 8-3491] module 'D_FF' declared at '/home/ansh/Desktop/project_files/bet_regis.vhd:24' bound to instance 'D_FF6' of component 'D_FF' [/home/ansh/Desktop/project_files/bet_regis.vhd:69]
+INFO: [Synth 8-3491] module 'D_FF' declared at '/home/ansh/Desktop/project_files/bet_regis.vhd:24' bound to instance 'D_FF7' of component 'D_FF' [/home/ansh/Desktop/project_files/bet_regis.vhd:71]
+INFO: [Synth 8-3491] module 'D_FF' declared at '/home/ansh/Desktop/project_files/bet_regis.vhd:24' bound to instance 'D_FF8' of component 'D_FF' [/home/ansh/Desktop/project_files/bet_regis.vhd:73]
+INFO: [Synth 8-3491] module 'D_FF' declared at '/home/ansh/Desktop/project_files/bet_regis.vhd:24' bound to instance 'D_FF9' of component 'D_FF' [/home/ansh/Desktop/project_files/bet_regis.vhd:75]
+INFO: [Synth 8-3491] module 'D_FF' declared at '/home/ansh/Desktop/project_files/bet_regis.vhd:24' bound to instance 'D_FF10' of component 'D_FF' [/home/ansh/Desktop/project_files/bet_regis.vhd:77]
+INFO: [Synth 8-3491] module 'D_FF' declared at '/home/ansh/Desktop/project_files/bet_regis.vhd:24' bound to instance 'D_FF11' of component 'D_FF' [/home/ansh/Desktop/project_files/bet_regis.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'register12' (7#1) [/home/ansh/Desktop/project_files/bet_regis.vhd:51]
+INFO: [Synth 8-3491] module 'register12' declared at '/home/ansh/Desktop/project_files/bet_regis.vhd:44' bound to instance 'p2' of component 'register12' [/home/ansh/Desktop/project_files/feed_amount.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'feed_amount' (8#1) [/home/ansh/Desktop/project_files/feed_amount.vhd:107]
+INFO: [Synth 8-3491] module 'subtractor' declared at '/home/ansh/Desktop/project_files/subtractor.vhd:36' bound to instance 'sub' of component 'subtractor' [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:262]
+INFO: [Synth 8-638] synthesizing module 'subtractor' [/home/ansh/Desktop/project_files/subtractor.vhd:51]
+WARNING: [Synth 8-614] signal 'invalid' is read in the process but is not in the sensitivity list [/home/ansh/Desktop/project_files/subtractor.vhd:54]
+WARNING: [Synth 8-614] signal 'p2' is read in the process but is not in the sensitivity list [/home/ansh/Desktop/project_files/subtractor.vhd:54]
+WARNING: [Synth 8-614] signal 'bet_amo' is read in the process but is not in the sensitivity list [/home/ansh/Desktop/project_files/subtractor.vhd:54]
+WARNING: [Synth 8-614] signal 'p1' is read in the process but is not in the sensitivity list [/home/ansh/Desktop/project_files/subtractor.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'subtractor' (9#1) [/home/ansh/Desktop/project_files/subtractor.vhd:51]
+INFO: [Synth 8-3491] module 'GameOver' declared at '/home/ansh/Desktop/project_files/GameOver.vhd:34' bound to instance 'Game_Over' of component 'GameOver' [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:273]
+INFO: [Synth 8-638] synthesizing module 'GameOver' [/home/ansh/Desktop/project_files/GameOver.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'GameOver' (10#1) [/home/ansh/Desktop/project_files/GameOver.vhd:42]
+INFO: [Synth 8-3491] module 'FSM_Delay' declared at '/home/ansh/Desktop/project_files/FSM_Delay.vhd:34' bound to instance 'FSM' of component 'FSM_Delay' [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:290]
+INFO: [Synth 8-638] synthesizing module 'FSM_Delay' [/home/ansh/Desktop/project_files/FSM_Delay.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'FSM_Delay' (11#1) [/home/ansh/Desktop/project_files/FSM_Delay.vhd:46]
+INFO: [Synth 8-3491] module 'sub_reg' declared at '/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:96' bound to instance 'sub_regis' of component 'sub_reg' [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:300]
+INFO: [Synth 8-638] synthesizing module 'sub_reg' [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:106]
+INFO: [Synth 8-3491] module 'sub_register12' declared at '/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:43' bound to instance 'sub1' of component 'sub_register12' [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'sub_register12' [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:50]
+INFO: [Synth 8-3491] module 'ne_D_FF' declared at '/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:23' bound to instance 'nD_FF0' of component 'ne_D_FF' [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'ne_D_FF' [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'ne_D_FF' (12#1) [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:28]
+INFO: [Synth 8-3491] module 'ne_D_FF' declared at '/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:23' bound to instance 'nD_FF1' of component 'ne_D_FF' [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:58]
+INFO: [Synth 8-3491] module 'ne_D_FF' declared at '/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:23' bound to instance 'nD_FF2' of component 'ne_D_FF' [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:60]
+INFO: [Synth 8-3491] module 'ne_D_FF' declared at '/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:23' bound to instance 'nD_FF3' of component 'ne_D_FF' [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:62]
+INFO: [Synth 8-3491] module 'ne_D_FF' declared at '/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:23' bound to instance 'nD_FF4' of component 'ne_D_FF' [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:64]
+INFO: [Synth 8-3491] module 'ne_D_FF' declared at '/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:23' bound to instance 'nD_FF5' of component 'ne_D_FF' [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:66]
+INFO: [Synth 8-3491] module 'ne_D_FF' declared at '/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:23' bound to instance 'nD_FF6' of component 'ne_D_FF' [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:68]
+INFO: [Synth 8-3491] module 'ne_D_FF' declared at '/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:23' bound to instance 'nD_FF7' of component 'ne_D_FF' [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:70]
+INFO: [Synth 8-3491] module 'ne_D_FF' declared at '/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:23' bound to instance 'nD_FF8' of component 'ne_D_FF' [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:72]
+INFO: [Synth 8-3491] module 'ne_D_FF' declared at '/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:23' bound to instance 'nD_FF9' of component 'ne_D_FF' [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:74]
+INFO: [Synth 8-3491] module 'ne_D_FF' declared at '/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:23' bound to instance 'nD_FF10' of component 'ne_D_FF' [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:76]
+INFO: [Synth 8-3491] module 'ne_D_FF' declared at '/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:23' bound to instance 'nD_FF11' of component 'ne_D_FF' [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:78]
+INFO: [Synth 8-256] done synthesizing module 'sub_register12' (13#1) [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:50]
+INFO: [Synth 8-3491] module 'sub_register12' declared at '/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:43' bound to instance 'sub2' of component 'sub_register12' [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'sub_reg' (14#1) [/home/ansh/final_miniproject/final_miniproject.srcs/sources_1/new/sub_reg.vhd:106]
+INFO: [Synth 8-3491] module 'bet_regis' declared at '/home/ansh/Desktop/project_files/bet_regis.vhd:95' bound to instance 'bet_amonut_buffer' of component 'bet_regis' [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:309]
+INFO: [Synth 8-638] synthesizing module 'bet_regis' [/home/ansh/Desktop/project_files/bet_regis.vhd:104]
+INFO: [Synth 8-3491] module 'register12' declared at '/home/ansh/Desktop/project_files/bet_regis.vhd:44' bound to instance 'p1' of component 'register12' [/home/ansh/Desktop/project_files/bet_regis.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'bet_regis' (15#1) [/home/ansh/Desktop/project_files/bet_regis.vhd:104]
+INFO: [Synth 8-3491] module 'seven_seg_display' declared at '/home/ansh/Desktop/project_files/7_segement_display.vhd:233' bound to instance 'ssd' of component 'seven_seg_display' [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:322]
+INFO: [Synth 8-638] synthesizing module 'seven_seg_display' [/home/ansh/Desktop/project_files/7_segement_display.vhd:242]
+INFO: [Synth 8-638] synthesizing module 'clock5' [/home/ansh/Desktop/project_files/7_segement_display.vhd:151]
+WARNING: [Synth 8-614] signal 'pushbutton' is read in the process but is not in the sensitivity list [/home/ansh/Desktop/project_files/7_segement_display.vhd:155]
+WARNING: [Synth 8-614] signal 'c' is read in the process but is not in the sensitivity list [/home/ansh/Desktop/project_files/7_segement_display.vhd:155]
+INFO: [Synth 8-256] done synthesizing module 'clock5' (16#1) [/home/ansh/Desktop/project_files/7_segement_display.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'counter' [/home/ansh/Desktop/project_files/7_segement_display.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'ftp' [/home/ansh/Desktop/project_files/7_segement_display.vhd:78]
+INFO: [Synth 8-256] done synthesizing module 'ftp' (17#1) [/home/ansh/Desktop/project_files/7_segement_display.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'd2_4' [/home/ansh/Desktop/project_files/7_segement_display.vhd:52]
+INFO: [Synth 8-226] default block is never used [/home/ansh/Desktop/project_files/7_segement_display.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'd2_4' (18#1) [/home/ansh/Desktop/project_files/7_segement_display.vhd:52]
+WARNING: [Synth 8-3848] Net XLXI_1_PRE_openSignal in module/entity counter does not have driver. [/home/ansh/Desktop/project_files/7_segement_display.vhd:115]
+WARNING: [Synth 8-3848] Net XLXI_2_PRE_openSignal in module/entity counter does not have driver. [/home/ansh/Desktop/project_files/7_segement_display.vhd:116]
+INFO: [Synth 8-256] done synthesizing module 'counter' (19#1) [/home/ansh/Desktop/project_files/7_segement_display.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'select_digit' [/home/ansh/Desktop/project_files/7_segement_display.vhd:216]
+WARNING: [Synth 8-614] signal 'b' is read in the process but is not in the sensitivity list [/home/ansh/Desktop/project_files/7_segement_display.vhd:218]
+WARNING: [Synth 8-614] signal 'a' is read in the process but is not in the sensitivity list [/home/ansh/Desktop/project_files/7_segement_display.vhd:218]
+INFO: [Synth 8-256] done synthesizing module 'select_digit' (20#1) [/home/ansh/Desktop/project_files/7_segement_display.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'display_digit' [/home/ansh/Desktop/project_files/7_segement_display.vhd:180]
+INFO: [Synth 8-226] default block is never used [/home/ansh/Desktop/project_files/7_segement_display.vhd:184]
+INFO: [Synth 8-256] done synthesizing module 'display_digit' (21#1) [/home/ansh/Desktop/project_files/7_segement_display.vhd:180]
+INFO: [Synth 8-256] done synthesizing module 'seven_seg_display' (22#1) [/home/ansh/Desktop/project_files/7_segement_display.vhd:242]
+INFO: [Synth 8-256] done synthesizing module 'Seven_upSeven_down' (23#1) [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:59]
+WARNING: [Synth 8-3331] design subtractor has unconnected port rng[3]
+WARNING: [Synth 8-3331] design subtractor has unconnected port rng[2]
+WARNING: [Synth 8-3331] design subtractor has unconnected port rng[1]
+WARNING: [Synth 8-3331] design subtractor has unconnected port rng[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1099.043 ; gain = 168.566 ; free physical = 495 ; free virtual = 4537
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin f1:PRE to constant 0 [/home/ansh/Desktop/project_files/7_segement_display.vhd:119]
+WARNING: [Synth 8-3295] tying undriven pin f2:PRE to constant 0 [/home/ansh/Desktop/project_files/7_segement_display.vhd:126]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1099.043 ; gain = 168.566 ; free physical = 495 ; free virtual = 4537
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ansh/Desktop/project_files/mini_pro.xdc]
+CRITICAL WARNING: [Designutils 20-1307] Command 'Bank' is not supported in the xdc constraint file. [/home/ansh/Desktop/project_files/mini_pro.xdc:7]
+WARNING: [Vivado 12-507] No nets matched 'pushRand_IBUF'. [/home/ansh/Desktop/project_files/mini_pro.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ansh/Desktop/project_files/mini_pro.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/ansh/Desktop/project_files/mini_pro.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ansh/Desktop/project_files/mini_pro.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Seven_upSeven_down_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Seven_upSeven_down_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1395.426 ; gain = 0.000 ; free physical = 331 ; free virtual = 4372
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1395.426 ; gain = 464.949 ; free physical = 332 ; free virtual = 4373
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1395.426 ; gain = 464.949 ; free physical = 332 ; free virtual = 4373
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1395.426 ; gain = 464.949 ; free physical = 332 ; free virtual = 4373
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "c" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [/home/ansh/Desktop/project_files/Decider.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'invbet_reg' [/home/ansh/Desktop/project_files/subtractor.vhd:59]
+WARNING: [Synth 8-327] inferring latch for variable 'p1r_reg' [/home/ansh/Desktop/project_files/subtractor.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'p2r_reg' [/home/ansh/Desktop/project_files/subtractor.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'bet_amount_reg' [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:244]
+WARNING: [Synth 8-327] inferring latch for variable 'P1buffer_reg' [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:240]
+WARNING: [Synth 8-327] inferring latch for variable 'P2buffer_reg' [/home/ansh/Desktop/project_files/Seven_upSeven_down.vhd:242]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1395.426 ; gain = 464.949 ; free physical = 317 ; free virtual = 4358
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 67    
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 6     
+	   4 Input     12 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Seven_upSeven_down 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module DFF 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Random_number_generator 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Decider 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module D_FF 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module subtractor 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module FSM_Delay 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module ne_D_FF 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clock5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module ftp 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module d2_4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module select_digit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "ssd/clck/c" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1395.426 ; gain = 464.949 ; free physical = 301 ; free virtual = 4342
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1395.426 ; gain = 464.949 ; free physical = 277 ; free virtual = 4310
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1395.426 ; gain = 464.949 ; free physical = 267 ; free virtual = 4301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1395.426 ; gain = 464.949 ; free physical = 257 ; free virtual = 4290
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1395.426 ; gain = 464.949 ; free physical = 257 ; free virtual = 4290
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1395.426 ; gain = 464.949 ; free physical = 257 ; free virtual = 4290
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1395.426 ; gain = 464.949 ; free physical = 257 ; free virtual = 4290
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1395.426 ; gain = 464.949 ; free physical = 257 ; free virtual = 4290
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1395.426 ; gain = 464.949 ; free physical = 257 ; free virtual = 4290
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1395.426 ; gain = 464.949 ; free physical = 257 ; free virtual = 4290
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    24|
+|3     |LUT1   |    18|
+|4     |LUT2   |    31|
+|5     |LUT3   |    26|
+|6     |LUT4   |    77|
+|7     |LUT5   |     9|
+|8     |LUT6   |    57|
+|9     |FDRE   |    58|
+|10    |FDSE   |     4|
+|11    |LD     |    61|
+|12    |LDC    |     1|
+|13    |IBUF   |    22|
+|14    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+------------------------+------+
+|      |Instance         |Module                  |Cells |
++------+-----------------+------------------------+------+
+|1     |top              |                        |   406|
+|2     |  FSM            |FSM_Delay               |    40|
+|3     |  bset_RNG       |Random_number_generator |     9|
+|4     |    DFF          |DFF                     |     1|
+|5     |    \ggf[1].hjg  |DFF_25                  |     2|
+|6     |    \ggf[2].hjg  |DFF_26                  |     4|
+|7     |    \ggf[3].hjg  |DFF_27                  |     2|
+|8     |  decide         |Decider                 |     3|
+|9     |  ssd            |seven_seg_display       |    53|
+|10    |    clck         |clock5                  |    45|
+|11    |    counter      |counter                 |     8|
+|12    |      f1         |ftp                     |     4|
+|13    |      f2         |ftp_24                  |     4|
+|14    |  sub            |subtractor              |   169|
+|15    |  sub_regis      |sub_reg                 |    48|
+|16    |    sub1         |sub_register12          |    24|
+|17    |      nD_FF0     |ne_D_FF_12              |     2|
+|18    |      nD_FF1     |ne_D_FF_13              |     2|
+|19    |      nD_FF10    |ne_D_FF_14              |     2|
+|20    |      nD_FF11    |ne_D_FF_15              |     2|
+|21    |      nD_FF2     |ne_D_FF_16              |     2|
+|22    |      nD_FF3     |ne_D_FF_17              |     2|
+|23    |      nD_FF4     |ne_D_FF_18              |     2|
+|24    |      nD_FF5     |ne_D_FF_19              |     2|
+|25    |      nD_FF6     |ne_D_FF_20              |     2|
+|26    |      nD_FF7     |ne_D_FF_21              |     2|
+|27    |      nD_FF8     |ne_D_FF_22              |     2|
+|28    |      nD_FF9     |ne_D_FF_23              |     2|
+|29    |    sub2         |sub_register12_0        |    24|
+|30    |      nD_FF0     |ne_D_FF                 |     2|
+|31    |      nD_FF1     |ne_D_FF_1               |     2|
+|32    |      nD_FF10    |ne_D_FF_2               |     2|
+|33    |      nD_FF11    |ne_D_FF_3               |     2|
+|34    |      nD_FF2     |ne_D_FF_4               |     2|
+|35    |      nD_FF3     |ne_D_FF_5               |     2|
+|36    |      nD_FF4     |ne_D_FF_6               |     2|
+|37    |      nD_FF5     |ne_D_FF_7               |     2|
+|38    |      nD_FF6     |ne_D_FF_8               |     2|
+|39    |      nD_FF7     |ne_D_FF_9               |     2|
+|40    |      nD_FF8     |ne_D_FF_10              |     2|
+|41    |      nD_FF9     |ne_D_FF_11              |     2|
++------+-----------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1395.426 ; gain = 464.949 ; free physical = 257 ; free virtual = 4290
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1395.426 ; gain = 86.465 ; free physical = 257 ; free virtual = 4290
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1395.434 ; gain = 464.957 ; free physical = 257 ; free virtual = 4290
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 108 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 62 instances were transformed.
+  LD => LDCE: 61 instances
+  LDC => LDCE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+114 Infos, 36 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1395.434 ; gain = 395.441 ; free physical = 259 ; free virtual = 4292
+INFO: [Common 17-1381] The checkpoint '/home/ansh/final_miniproject/final_miniproject.runs/synth_1/Seven_upSeven_down.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1419.438 ; gain = 0.000 ; free physical = 259 ; free virtual = 4293
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 10 23:37:38 2017...

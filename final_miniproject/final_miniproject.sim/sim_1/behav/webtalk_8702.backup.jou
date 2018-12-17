@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Nov 10 22:33:54 2017
+# Process ID: 8702
+# Current directory: /home/ansh/final_miniproject/final_miniproject.sim/sim_1/behav
+# Command line: wbtcv -mode batch -source /home/ansh/final_miniproject/final_miniproject.sim/sim_1/behav/xsim.dir/Seven_upSeven_down_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/ansh/final_miniproject/final_miniproject.sim/sim_1/behav/webtalk.log
+# Journal file: /home/ansh/final_miniproject/final_miniproject.sim/sim_1/behav/webtalk.jou
+#-----------------------------------------------------------
+source /home/ansh/final_miniproject/final_miniproject.sim/sim_1/behav/xsim.dir/Seven_upSeven_down_behav/webtalk/xsim_webtalk.tcl -notrace
