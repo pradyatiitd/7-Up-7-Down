@@ -13,6 +13,7 @@ First we take input from user using switches and three pushbuttons one each for 
 7. Bet_Register : Register used to store input for bet amount.
 
 ### Mappings
+![](https://github.com/pradyatiitd/7-Up-7-Down/blob/master/Mapping.jpg)
 #### LEDs =>
 1. over : This indicates whether the game is over or not.
 2. P1won : This indicates that currently player one is winning.
